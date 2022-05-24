@@ -1,0 +1,27 @@
+.project-list{
+    margin-top: 15px;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.project-list-texts{
+    width: 65%;
+}
+.project-list-title{
+   font-size: 45px;
+   font-weight: 400;
+   /* font-weight: 500; */
+   font-family: cursive;
+   color: #7e297e; 
+}
+.project-list-descriptio{
+    margin: 20px 0;
+}
+.projects-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

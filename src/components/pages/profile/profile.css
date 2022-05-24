@@ -1,0 +1,137 @@
+.primary-btn{
+    color: white;
+    border: 2px solid white;
+    font-size: 14px;
+    line-height: 30px;
+    width: 120px;
+    background-color: #1f2235;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.primary-btn:hover{
+    color: #1f2235;
+    background-color: white;
+}
+.profile-container{
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    min-height: fit-content;
+    background-image: url('../../../../public/background1.jpg');
+}
+.profile-parent{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+.profile-detailes-name{
+    font-size: 24px;
+}
+.profile-detailes-role{
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 24px 0;
+}
+.profile-detailes-role h1{
+    font-size: 35px;
+    font-family: cursive;
+}
+.primal-text{
+    color: white;
+}
+.text-name{
+    color: #1f2235;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.profile-role-tagline{
+    font-size: 19px;
+    margin: 5px;
+}
+.profile-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px white;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    margin: 0px 0px 4px 100px;
+
+}
+.profile-picture-background{
+    height: 92%;
+    width: 92%;
+    background-image: url("../../../../public/me.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.profile-picture-background:hover{
+    transform: scale(1.07);
+    transition: 1s ease-out;
+}
+.icons i{
+    color: white;
+    padding: 8px;
+    padding-left: 0;
+}
+.icons i:hover{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width:1110px) {
+    .profile-picture{
+        margin: 0 0px 80px;
+    }
+    .profile-detailes-name{
+        font-size: 20px;
+    }
+    .profile-detailes-role .primal-text{
+        font-size: 12px;
+    }
+    .primary-btn{
+        width: 120px;
+        padding: 11px 0;
+        z-index: 700;
+    }
+    
+}
+@media screen and (max-width:910px){
+    .profile-picture{
+        height: 320px;
+        width: 320px;
+        margin: 0 0 0 4px;
+    }
+}
+@media screen and (max-width:810px){
+    .profile-picture{
+        margin: 0 !important;
+    }
+    .profile-parent{
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0;
+    }
+    .profile-detailes{
+        margin: 25px 0 0;
+    }
+    .profile-detailes-role{
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width:375px){
+    .profile-picture{
+        height: 275px;
+        width: 275px;
+        margin-top: -90px;
+    }
+    .profile-detailes{
+        width: 90%;
+    }
+
+}
